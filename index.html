@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./src/css/reset.css">
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <title>Checkout</title>
+</head>
+
+<body>
+    <main class="main-container">
+        <h1 class="title">Checkout Page</h1>
+        <form action="" class="form">
+            <div class="form-container">
+                <section class="checkout-page">
+
+                    <div class="contact-information">
+                        <div>
+                            <h3>Contact information</h3>
+                            <label for="email">E-mail</label>
+                            <div class="input-container">
+                                <i class="fa-solid fa-envelope input-icon"></i>
+                                <input type="email" class="input-field" id="email" placeholder="Enter your email..."
+                                    required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="phone">Phone</label>
+                            <div class="input-container">
+                                <i class="fa-solid fa-phone input-icon"></i>
+                                <input type="tel" class="input-field" id="phone" placeholder="Enter your email..."
+                                    required>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="shipping-address">
+                        <div>
+                            <h3>Shipping address</h3>
+                            <label for="fullName">Full name</label>
+                            <div class="input-container">
+                                <i class="fa-solid fa-user-circle input-icon"></i>
+                                <input type="text" class="input-field" id="fullName" placeholder="Your name.." required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="address">Address</label>
+                            <div class="input-container">
+                                <i class="fa-solid fa-house input-icon"></i>
+                                <input type="text" class="input-field" id="address" placeholder="Your city.." required>
+                            </div>
+                        </div>
+                        <div>
+                            <label for="city">City</label>
+                            <div class="input-container">
+                                <i class="fa-solid fa-city input-icon"></i>
+                                <input type="text" class="input-field" id="city" placeholder="Your city.." required>
+                            </div>
+                        </div>
+                        <div class="location-container">
+                            <div class="country-container">
+                                <label for="country">Country</label>
+                                <div class="input-container">
+                                    <i class="fa-solid fa-earth-americas input-icon"></i>
+                                    <select class="input-field country" id="country" placeholder="Your country.."
+                                        required>
+                                        <option disabled selected hidden value="">Your country..</option>
+                                        <option value="Brazil">Brazil</option>
+                                        <option value="Japan">Japan</option>
+                                        <option value="United States">United States</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="postal-container">
+                                <label for="postal-code">Postal Code</label>
+                                <div class="input-container">
+                                    <i class="fas fa-mail-bulk input-icon"></i>
+                                    <input type="text" class="input-field" id="postal-code"
+                                        placeholder="Your postal code.." required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox-container">
+                            <input type="checkbox" class="checkbox" id="save-checkbox">
+                            <label class="checkbox-text" for="save-checkbox">Save this information for next time</label>
+                        </div>
+                    </div>
+                </section>
+
+                <section class="cart">
+                    <div class="items-cart">
+                        <div class="item">
+                            <img src="./src/images/photo1.png" alt="placeholder">
+                            <div class="item-desc">
+                                <h3 class="item-name">Vintage Backbag</h3>
+                                <p class="price">$54.99 <s>$94.99</s></p>
+                                <div class="item-counter">
+                                    <button class="btn-cart minus" type="button"><i
+                                            class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantity" class="value" value="1" min="0">
+                                    <button class="btn-cart plus" type="button"><i
+                                            class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <img src="./src/images/photo2.png" alt="placeholder">
+                            <div class="item-desc">
+                                <h3 class="item-name">Levi Shoes</h3>
+                                <p class="price">$74.99 <s>$124.99</s></p>
+                                <div class="item-counter">
+                                    <button class="btn-cart minus" type="button"><i
+                                            class="fa-solid fa-minus"></i></button>
+                                    <input type="number" id="quantity" class="value" value="1" min="0">
+                                    <button class="btn-cart plus" type="button"><i
+                                            class="fa-solid fa-plus"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="shipping-container">
+                        <hr>
+                        <div class="shipping">
+                            <p>Shipping</p>
+                            <p class="shipping-value">$19</p>
+                        </div>
+                        <hr>
+                        <div class="shipping">
+                            <p>Total</p>
+                            <p class="shipping-value">$148.98</p>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+            <button class="btn-submit" type="submit">Continue</button>
+            <p class="link">created by <a href="https://devchallenges.io/portfolio/Fenixherm">Fenixherm</a> - <a href="https://devchallenges.io/">devChallenges.io</a></p>
+        </form>
+    </main>
+</body>
+
+</html>

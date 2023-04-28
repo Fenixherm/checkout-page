@@ -1,0 +1,87 @@
+@media (max-width: 780px){
+    .form {
+        margin: 0 40px;
+    }
+
+    .form-container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+
+    .contact-information {
+        margin-top: 39px;
+    }
+
+    .input-container {
+        width: 100%;
+    }
+
+    .location-container {
+        display: flex;
+        width: 100%;
+        gap: 23px;
+    }
+
+    .country-container, .postal-container{
+        margin-left: 0;
+        width: 335px;
+    }
+
+    .cart {
+        margin: 0;
+        align-self: center;
+    }
+}
+
+@media (max-width: 425px){
+    .form{
+        margin: 14px;
+    }
+
+    .input-field{
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    label {
+        font-size: 10px;
+    }
+
+    .btn-submit {
+        align-self: flex-end;
+    }
+
+    .price {
+        font-size: 14px;
+    }
+
+    .price s{
+        font-size: 10px;
+    }
+
+    .shipping{
+        font-size: 14px;
+    }
+
+    .item img{
+        width: 122px;
+        height: 122px;
+    }
+
+    
+    .item .item-counter{
+        width: 125px;
+        margin-top: 20px;
+    }
+
+    .cart {
+        width: 100%;
+    }
+}
+
+@media (max-width: 425px){
+
+}
